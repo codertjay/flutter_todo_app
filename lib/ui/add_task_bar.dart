@@ -289,7 +289,6 @@ class _AddTaskPageState extends State<AddTaskPage> {
   }
 
   _validateDate() {
-    print('balessssss');
     if (_titleController.text.isNotEmpty && _noteController.text.isNotEmpty) {
       //  add to database
       _addTaskToDB();
@@ -315,7 +314,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
             repeat: _selectedRepeat,
             color: _selectedColor,
             isCompleted: 0));
-    print('My id is $value');
+    print(value);
   }
 
   _showTimePicker() {
